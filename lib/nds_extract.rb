@@ -10,7 +10,7 @@ def directors_totals(nds)
   outer_index = 0
   while outer_index < nds.count do
     director_data = nds[outer_index]
-    result[director_data][:name] = gross_for_director(director_data)
+    result[nds][outer_index][:name] = gross_for_director(director_data)
     outer_index += 1 
   end 
   result
